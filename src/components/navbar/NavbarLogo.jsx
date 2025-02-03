@@ -1,11 +1,9 @@
 const NavbarLogo = () => {
   return (
     <div>
-      <h1 className="text-white  text-2xl sm:hidden md:block">
-        SELAM-AI
-      </h1>
+      <h1 className="text-white  text-2xl sm:hidden md:block">ROBO CODE -AI</h1>
       <h1 className="text-white font-special font-extrabold text-4xl md:hidden sm:block">
-        SA
+        RC
       </h1>
     </div>
   );

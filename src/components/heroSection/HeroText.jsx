@@ -20,7 +20,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
       >
-        Selam <br className="sm:hidden" />
+        Robo Code <br className="sm:hidden" />
         AI
       </motion.h1>
       <motion.p

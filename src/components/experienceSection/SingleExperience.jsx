@@ -8,12 +8,15 @@ const SingleExperience = ({ experience }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
-      className="md:h-[350px] md:w-[240px] sm:h-auto sm:w-full border-2 border-orange border-dashed rounded-2xl mt-12 p-4"
+      className="md:h-[350px] md:w-[240px] sm:h-auto sm:w-full border-4 border-orange border-dashed rounded-2xl mt-12 p-4"
     >
-      <p className="font-bold text-cyan">{experience.job}</p>
+      <p className="md:h-[150px] md:w-[150px] sm:w-auto sm:h-full border-2 border-y-lightOrange border-dashed rounded-2xl mb-3 p-1">
+        {experience.photo}
+      </p>
       <p className="text-orange">{experience.company}</p>
-      <p className="text-lightGrey">{experience.date}</p>
-      <ul className="list-disc mt-4 pl-4">
+      <p className="font-bold text-cyan">{experience.job}</p>
+
+      <ul className="list-disc pl-4">
         {experience.responsibilities.map((resp, index) => {
           return <li key={index}>{resp}</li>;
         })}
