@@ -1,6 +1,6 @@
 const SkillsText = () => {
   return (
-    <div className="flex flex-col items-center mt-[100px]">
+    <div className="mt-10 flex flex-col items-center mt-[100px]">
       <h2 className="text-6xl text-cyan mb-10">Our Skills</h2>
       <p className="text-lg text-center">
         We are a team of eight skilled professionals, each bringing unique
