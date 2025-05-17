@@ -50,7 +50,7 @@ export default {
       },
     },
     fontFamily: {
-      body: ["Josefin Sans"],
+      body: [""],
       special: ['"Nunito"'],
     },
   },
