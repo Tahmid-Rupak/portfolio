@@ -53,6 +53,28 @@ export default {
       body: [""],
       special: ['"Nunito"'],
     },
+
+    extend: {
+      animation: {
+        ripple: "ripple 3s cubic-bezier(.65,0,.34,1) infinite",
+        "ripple-delay": "ripple 3s cubic-bezier(.65,0,.34,1) 0.5s infinite",
+        "ripple-fast": "ripple 1.2s cubic-bezier(.65,0,.34,1) infinite",
+        "ripple-delay-fast":
+          "ripple 1.2s cubic-bezier(.65,0,.34,1) 0.5s infinite",
+      },
+      keyframes: {
+        ripple: {
+          "0%": {
+            opacity: "1",
+            transform: "scale3d(0.75, 0.75, 1)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "scale3d(1.5, 1.5, 1)",
+          },
+        },
+      },
+    },
   },
   plugins: [],
 };

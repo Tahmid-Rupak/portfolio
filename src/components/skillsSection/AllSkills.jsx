@@ -1,8 +1,7 @@
 import SingleSkill from "./SingleSkill";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+import { SiJetpackcompose, SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiLaravel,
@@ -32,14 +31,13 @@ const skills = [
     icon: FaReact,
   },
   {
-    skill: "Redux",
-    icon: SiRedux,
+    skill: "Compose",
+    icon: SiJetpackcompose,
   },
   {
     skill: "NextJS",
     icon: SiNextdotjs,
   },
-
   {
     skill: "Node.js",
     icon: FaNodeJs,
@@ -48,7 +46,6 @@ const skills = [
     skill: "Laravel",
     icon: SiLaravel,
   },
-
   {
     skill: "MongoDB",
     icon: SiMongodb,

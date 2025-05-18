@@ -2,8 +2,7 @@ import { Link } from "react-scroll";
 
 const links = [
   { link: "About Us", section: "about" },
-  { link: "Skills", section: "skills" },
- 
+
   { link: "Contact", section: "contact" },
 ];
 
