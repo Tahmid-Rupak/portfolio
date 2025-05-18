@@ -5,7 +5,6 @@ export default function ChatMain() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger fade-in animation after 1 second
     const timer = setTimeout(() => {
       setVisible(true);
     }, 1000);
@@ -18,17 +17,23 @@ export default function ChatMain() {
         visible ? "bottom-6 opacity-100" : "bottom-[-50px] opacity-0"
       }`}
     >
-      <a
-        href="https://wa.me/8801518907202"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[64px] text-lightCyan inline-block hover:scale-125 transition-transform duration-400"
-      >
-        <FaWhatsapp />
-      </a>
-      <span className="absolute top-0 left-1 font-roboto font-bold text-[#075e54] opacity-0 -translate-y-14 transition-all duration-400 hover:translate-y-0 hover:opacity-100">
-        WhatsApp
-      </span>
+      {/* Wrapper for hover group */}
+      <div className="relative group flex flex-col items-center">
+        {/* Tooltip outside the button */}
+        <span className="mb-2 font-roboto font-bold text-lightCyan opacity-0 -translate-y-2 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100 pointer-events-none">
+          WhatsApp
+        </span>
+
+        {/* WhatsApp button */}
+        <a
+          href="https://wa.me/8801518907202"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[64px] text-lightCyan inline-block hover:scale-125 transition-transform duration-400"
+        >
+          <FaWhatsapp />
+        </a>
+      </div>
     </div>
   );
 }
